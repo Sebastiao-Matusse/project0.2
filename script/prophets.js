@@ -20,9 +20,9 @@ const displayProphets = (prophets) => {
     cardhead.setAttribute("class", "cardhead");
     let h2 = document.createElement("h2");
     let birthdate = document.createElement("p");
-    let death = document.createElement("p");
+    // let death = document.createElement("p");
     let birthplace = document.createElement("p");
-    let ageAtDeath = document.createElement("p");
+    // let ageAtDeath = document.createElement("p");
     let portrait = document.createElement("img");
 
     // Build the h2 content out to show the prophet's full name - finish the template string
@@ -69,9 +69,9 @@ const displayProphets = (prophets) => {
     // Append the section(card) with the created elements
     cardhead.appendChild(h2);
     cardhead.appendChild(birthdate);
-    cardhead.appendChild(death);
-    cardhead.appendChild(birthplace);
-    cardhead.appendChild(ageAtDeath);
+    // cardhead.appendChild(death);
+    // cardhead.appendChild(birthplace);
+    // cardhead.appendChild(ageAtDeath);
     card.appendChild(cardhead);
     card.appendChild(portrait);
     console.log(cards);
