@@ -4,11 +4,8 @@
       "name": "Munhava, Beira",
       "lastname": "Matacuane - Enfrente a metrofarma",
       "birthdate": "23 de Maio 2023",
-      "death": "01 fe Julho de 2023",
       "length": 14,
       "order": 1,
-      "birthplace": "Vermont",
-      "numofchildren": 11,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
@@ -18,8 +15,7 @@
       "death": "29 August 1877",
       "length": 30,
       "order": 2,
-      "birthplace": "Vermont",
-      "numofchildren": 56,
+      "birthplace": "Beira",
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
@@ -29,8 +25,7 @@
       "death": "25 July 1887",
       "length": 6,
       "order": 3,
-      "birthplace": "England",
-      "numofchildren": 34,
+      "birthplace": "beira",
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
@@ -40,7 +35,7 @@
       "death": "02 September 1898",
       "length": 9,
       "order": 4,
-      "birthplace": "Connecticut",
+      "birthplace": "beira",
       "numofchildren": 34,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
@@ -51,7 +46,7 @@
       "death": "19 October 1901",
       "length": 3,
       "order": 5,
-      "birthplace": "Ohio",
+      "birthplace": "Beira",
       "numofchildren": 42,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
@@ -62,7 +57,7 @@
       "death": "19 November 1918",
       "length": 17,
       "order": 6,
-      "birthplace": "Missouri",
+      "birthplace": "beira",
       "numofchildren": 48,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
@@ -73,7 +68,7 @@
       "death": "14 May 1945",
       "length": 23,
       "order": 7,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 12,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
@@ -84,7 +79,7 @@
       "death": "4 April 1951",
       "length": 6,
       "order": 8,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 3,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/george-albert-smith-82914-gallery.jpg"
     },
@@ -95,7 +90,7 @@
       "death": "18 January 1970",
       "length": 19,
       "order": 9,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 7,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/david-o-mckay-82915-gallery.jpg"
     },
@@ -106,7 +101,7 @@
       "death": "2 July 1972",
       "length": 1,
       "order": 10,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 11,
       "imageurl": "https://media.ldscdn.org/images/media-library/teachings-of-presidents-of-the-church/joseph-fielding-smith/joseph-fielding-smith-82916-gallery.jpg"
     },
@@ -117,7 +112,7 @@
       "death": "26 December 1973",
       "length": 1,
       "order": 11,
-      "birthplace": "Idaho",
+      "birthplace": "Beira",
       "numofchildren": 2,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/harold-b-lee-37763-gallery.jpg"
     },
@@ -128,7 +123,7 @@
       "death": "5 November 1985",
       "length": 12,
       "order": 12,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 4,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/spencer-w-kimball-82918-gallery.jpg"
     },
@@ -139,7 +134,7 @@
       "death": "30 May 1994",
       "length": 9,
       "order": 13,
-      "birthplace": "Idaho",
+      "birthplace": "beira",
       "numofchildren": 6,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
     },
@@ -150,7 +145,7 @@
       "death": "3 March 1995",
       "length": 1,
       "order": 14,
-      "birthplace": "Idaho",
+      "birthplace": "Beira",
       "numofchildren": 3,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-howard-w-hunter-83247-gallery-notice.jpg"
     },
@@ -161,7 +156,7 @@
       "death": "27 January 2008",
       "length": 13,
       "order": 15,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 5,
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-gordon-b-hinckley-83335-gallery.jpg"
     },
@@ -172,7 +167,7 @@
       "death": "2 January 2018",
       "length": 10,
       "order": 16,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 3,
       "imageurl": "https://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/president-thomas-s-monson-lds-560823-gallery.jpg"
     },
@@ -183,7 +178,7 @@
       "death": null,
       "length": 2,
       "order": 17,
-      "birthplace": "Utah",
+      "birthplace": "Beira",
       "numofchildren": 10,
       "imageurl": "https://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/russell-nelson-official-portrait-2018-2044670-gallery.jpg"
     }
