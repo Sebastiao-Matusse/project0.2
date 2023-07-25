@@ -3,8 +3,8 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Matacuane - Enfrente a metrofarma",
-      "birthdate": "23 de Maio",
-      "death": "27 June 1844",
+      "birthdate": "23 de Maio 2023",
+      "death": "01 fe Julho de 2023",
       "length": 14,
       "order": 1,
       "birthplace": "Vermont",
@@ -20,29 +20,29 @@
       "order": 2,
       "birthplace": "Vermont",
       "numofchildren": 56,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Mananga - incerto",
-      "birthdate": "01 November 1808",
+      "lastname": "Matacuane - macamelo",
+      "birthdate": "perto da oficina 'campainha'",
       "death": "25 July 1887",
       "length": 6,
       "order": 3,
       "birthplace": "England",
       "numofchildren": 34,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/john-taylor-82909-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Mananga - ",
+      "lastname": "Mananga - a ",
       "birthdate": "01 March 1807",
       "death": "02 September 1898",
       "length": 9,
       "order": 4,
       "birthplace": "Connecticut",
       "numofchildren": 34,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
@@ -53,7 +53,7 @@
       "order": 5,
       "birthplace": "Ohio",
       "numofchildren": 42,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lorenzo-snow-82911-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
@@ -64,7 +64,7 @@
       "order": 6,
       "birthplace": "Missouri",
       "numofchildren": 48,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/joseph-f-smith-82912-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
@@ -75,7 +75,7 @@
       "order": 7,
       "birthplace": "Utah",
       "numofchildren": 12,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/heber-j-grant-82913-gallery.jpg"
+      "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
