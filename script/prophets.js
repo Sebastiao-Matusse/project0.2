@@ -55,12 +55,12 @@ const displayProphets = (prophets) => {
       );
     }
 
-    if (prophet.death !== null) {
-      deathAge =
-        new Date(prophet.death).getFullYear() -
-        new Date(prophet.birthdate).getFullYear();
-      ageAtDeath.textContent = `Age at death: ${deathAge}`;
-    }
+    // if (prophet.death !== null) {
+    //   deathAge =
+    //     new Date(prophet.death).getFullYear() -
+    //     new Date(prophet.birthdate).getFullYear();
+    //   ageAtDeath.textContent = `Age at death: ${deathAge}`;
+    // }
 
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute("width", "340");
