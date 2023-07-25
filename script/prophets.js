@@ -28,7 +28,7 @@ const displayProphets = (prophets) => {
     // Build the h2 content out to show the prophet's full name - finish the template string
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     birthdate.textContent = `${prophet.birthdate}`;
-    death.textContent = `${prophet.death}`;
+    // death.textContent = `${prophet.death}`;
     birthplace.textContent = `${prophet.birthplace}`;
 
     // Build the image portrait by setting all the relevant attribute
