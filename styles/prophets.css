@@ -13,6 +13,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+.weather {
+  margin-top: 5px;
+}
+
 .forecast {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,6 +49,7 @@ h1 {
 
 footer,
 .cardhead h2,
+h2,
 p {
   margin: 10px;
   text-align: center;

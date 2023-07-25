@@ -1,5 +1,5 @@
 const url =
-  "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+  "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
 
 async function getProphetData(url) {
   const response = await fetch(url);
@@ -76,7 +76,7 @@ const displayProphets = (prophets) => {
     card.appendChild(portrait);
     console.log(cards);
     cards.appendChild(card);
-    console.log(cards);
+    // console.log(cards);
   });
 };
 
