@@ -3,15 +3,15 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Matacuane - Enfrente a metrofarma",
-      "birthdate": "23 de Maio 2023",
+      "birthdate": "29 de Junho 2023",
       "length": 14,
       "order": 1,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Bairro CFM - Atras da Igreja Videira",
-      "birthdate": "01 June 1801",
+      "lastname": "Bairro-CFM - Atras da Igreja Videira",
+      "birthdate": "06 Julho 2023",
       "length": 30,
       "order": 2,
       "birthplace": "Beira",
@@ -19,24 +19,23 @@
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Matacuane - macamelo",
-      "birthdate": "perto da oficina 'campainha'",
-      "death": "25 July 1887",
+      "lastname": "Matacuane - macamelo: perto da oficina 'campainha'",
+      "birthdate": "16 de Julho de 2023",
       "length": 6,
       "order": 3,
-      "birthplace": "beira",
-      "imageurl": "data/images/matacuane-metrofarma.jpg"
+      "birthplace": "Beira",
+      "imageurl": "data/images/macamelo-campainha.jpg"
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Mananga - a ",
-      "birthdate": "01 March 1807",
+      "lastname": "Mananga - antes da ponte deviz simango - matacuane ",
+      "birthdate": "29 de Junho 2023",
       "death": "02 September 1898",
       "length": 9,
       "order": 4,
-      "birthplace": "beira",
+      "birthplace": "Beira",
       "numofchildren": 34,
-      "imageurl": "data/images/matacuane-metrofarma.jpg"
+      "imageurl": "data/images/antes-da-ponte-deviz-simango-matacuane.jpg"
     },
     {
       "name": "Munhava, Beira",
