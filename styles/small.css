@@ -1,0 +1,102 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  grid-column: 2/3;
+}
+header .logo a:nth-child(2) {
+  color: black;
+  text-decoration: none;
+}
+header nav {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+header #socials {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+header #socials ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#socials ul li:hover {
+  border-bottom: 3px solid green;
+}
+header nav ul,
+header #socials li {
+  list-style-type: none;
+}
+
+header nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+  display: block;
+  position: absolute;
+  background-color: rgba(241, 241, 241, 0.9);
+  min-width: 50%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 50%;
+}
+
+#hamburguerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburguerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburguerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburguerBtn.open span:nth-child(2) {
+  display: inline;
+}
+
+h1 {
+  text-align: center;
+  background-color: #4ce44c;
+  width: auto;
+}
+
+.reportar-btn {
+  text-align: center;
+}
+
+.r-btn {
+  background-color: #4ce44c;
+  border-radius: 2999px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 25rem) {
+  header #socials {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
