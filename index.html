@@ -6,7 +6,7 @@
     <title>Home-Page</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/prophets.css" />
-    <!-- <link rel="stylesheet" href="styles/small.css" /> -->
+    <link rel="stylesheet" href="styles/small.css" />
     <!-- <link rel="stylesheet" href="styles/medium.css" /> -->
     <!-- <link rel="stylesheet" href="styles/large.css" /> -->
     <meta
@@ -22,6 +22,11 @@
       href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Manrope&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -30,7 +35,7 @@
         <a href="index.html"
           ><img src="images/trash_can.jpg" width="50" alt="logo-image"
         /></a>
-        <h2>Lixo Denuncia</h2>
+        <a href="index.html"><h2>Lixo Denuncia</h2></a>
       </div>
       <nav>
         <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
@@ -73,18 +78,23 @@
           O Lixo deve ser recolhido Evite Poluição! <br />
           Evite Doenças
         </h2>
-        <img src="images/lixo_hero.webp" />
-        <div>
-          <button><b>REPORTE LIXO NAO RECOLHIDO</b></button>
+        <picture class="hero-img">
+          <img src="images/lixo_hero.webp" />
+        </picture>
+        <div class="reportar-btn">
+          <button class="r-btn">
+            <b>REPORTE LIXO NAO RECOLHIDO</b>
+          </button>
         </div>
         <h2>Denuncias Anteriores</h2>
         <div class="cards grid"></div>
-        <div>
-          <button><b>REPORTE LIXO NAO RECOLHIDO</b></button>
+        <div class="reportar-btn">
+          <button class="r-btn">
+            <b>REPORTE LIXO NAO RECOLHIDO</b>
+          </button>
         </div>
         <div class="weather">
           <h2>O Tempo em Beira</h2>
-
           <div class="forecast">
             <div class="day">
               <h3>Hoje</h3>
@@ -126,5 +136,6 @@
     </main>
     <script src="script/prophets.js"></script>
     <script src="script/weather.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Reportar-Lixo</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/prophets.css" />
-    <!-- <link rel="stylesheet" href="styles/small.css" /> -->
+    <link rel="stylesheet" href="styles/small.css" />
     <!-- <link rel="stylesheet" href="styles/medium.css" /> -->
     <!-- <link rel="stylesheet" href="styles/large.css" /> -->
     <meta
@@ -21,6 +21,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Manrope&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -68,28 +72,91 @@
     </header>
     <main>
       <div class="content">
-        <p>
-          O lixo deve ser recolhido
-        </p>
+        <h1>O lixo deve ser recolhido</h1>
         <form action="">
           <fieldset>
             <legend>Dados do local com o lixo</legend>
             <label for="bairro">
-              Bairro* <input type="text" name="bairro" required>
+              Bairro*
+              <input type="text" name="bairro" value="Mananga" required />
             </label>
             <label for="tipo_de_lixo">
-              Tipo de Lixo* <input type="text"  name="tipodelixo" required>
+              Categoria de Lixo*
+              <select name="categoria" id="">
+                <option value="" hidden>Indique a categoria</option>
+                <option value="Lixo Fora do Contentor">
+                  Lixo Fora do Contentor
+                </option>
+                <option value="Contentor Cheio">Contentor Cheio</option>
+                <option value="Lixeira Informal">Lixeira Informal</option>
+                <option value="Lixo Na rua">Lixo Na rua</option>
+                <option value="Nenhuma">Nenhuma das Anteriores</option>
+              </select>
             </label>
             <label for="Localproximo">
-              Local mais proximo* <input type="text" name="localproximo">
+              Local mais proximo* <input type="text" name="localproximo" />
             </label>
-            <label>
-              
+            <label for="image">
+              Fotografia do local<input type="file" name="image" />
+            </label>
+            <label for="comment">
+              Seu comentario: comment: <textarea cols="50" rows="5"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados do informante</legend>
+            <label for="celular">
+              Celular:
+              <input
+                type="tel"
+                name="celular"
+                required
+                pattern="\+258\s?\d{2}\s?\d{6}"
+              />
+            </label>
+            <label for="email">
+              Email: <input type="email" name="email" />
+            </label>
+            <label for="moradia">
+              Moradia:
+              <select name="moradia-user" id="moradia">
+                <option value="" hidden>Selecione o Bairro</option>
+                <option value="macuti">Macute</option>
+                <option value="chipangara">chipangara</option>
+                <option value="pontagea">Ponta-gea</option>
+                <option value="chaimite">Chaimite</option>
+                <option value="maquinico">Maquinino</option>
+                <option value="pioneiros">Pioneiros</option>
+                <option value="esturro">Esturro</option>
+                <option value="matacuane">Matacuane</option>
+                <option value="macurungo">Macurungo</option>
+                <option value="munhavacentral">Munhava Central</option>
+                <option value="manga">Mananga</option>
+                <option value="vaz">Vaz</option>
+                <option value="maraza">Maraza</option>
+                <option value="chota">Chota</option>
+                <option value="altodamanga">Alto da Manga</option>
+                <option value="nhaconjo">Nhaconjo</option>
+                <option value="chingussura">Chingussura</option>
+                <option value="vila massane">Vila Massane</option>
+                <option value="mungassa">Mungassa</option>
+                <option value="ndunda">Ndunda</option>
+                <option value="mascarenha">Mascarenha</option>
+                <option value="muave">Muave</option>
+                <option value="inhamizua">Inhamizua</option>
+                <option value="matadouro">Matadouro</option>
+                <option value="nhangausede">Nhangau Sede</option>
+                <option value="tchonja">Tchonja</option>
+                <option value="nhangau">Nhangau</option>
+                <option value="nenhum">Nenhum</option>
+              </select>
             </label>
           </fieldset>
         </form>
-        
+      </div>
     </main>
     <script src="script/weather.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
