@@ -23,16 +23,16 @@ const windChillTwo = document.querySelector(".windChill-two");
 const windChillThree = document.querySelector(".windChill-three");
 const windChillFour = document.querySelector(".windChill-four");
 
-const url =
+const weatherurl =
   "https://api.openweathermap.org/data/2.5/forecast?id=1052373&units=imperial&lang=pt&appid=6b2ac5c31cc8f9324e82017d0a20bc18";
 
 async function apiFetch() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(weatherurl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
-      displayResults(data, 0, 5, 13, 21);
+      // console.log(data);
+      displayResults(data, 0, 5);
       // displayResults(data, 1);
     } else {
       throw Error(await response.text());
@@ -44,13 +44,8 @@ async function apiFetch() {
 
 apiFetch();
 
-function displayResults(
-  weatherData,
-  index_one,
-  index_two,
-  index_three,
-  index_four
-) {
+function displayResults(weatherData, index_one, index_two) {
+  // DAY ONE
   currentTemp.innerHTML = `<strong>${weatherData.list[
     index_one
   ].main.temp.toFixed(0)}</strong>`;
@@ -80,88 +75,4 @@ function displayResults(
   dayTwoWeatherIcon.setAttribute("src", iconsrcTwo);
   dayTwoWeatherIcon.setAttribute("alt", descTwo);
   captionDescTwo.textContent = descTwo.toUpperCase();
-
-  // DAY THREE
-  dayThreeTemp.innerHTML = `<strong>${weatherData.list[
-    index_three
-  ].main.temp.toFixed(0)}</strong>`;
-  humidityThree.innerHTML = `<strong>${weatherData.list[
-    index_three
-  ].main.humidity.toFixed(0)}</strong>`;
-
-  const iconsrcThree = `https://openweathermap.org/img/w/${weatherData.list[index_three].weather[0].icon}.png`;
-  const descThree = weatherData.list[index_three].weather[0].description;
-
-  dayThreeWeatherIcon.setAttribute("src", iconsrcThree);
-  dayThreeWeatherIcon.setAttribute("alt", descThree);
-  captionDescThree.textContent = descTwo.toUpperCase();
-  // console.log(captionDescThree);
-
-  // DAY FOUR
-  dayFourTemp.innerHTML = `<strong>${weatherData.list[
-    index_four
-  ].main.temp.toFixed(0)}</strong>`;
-  humidityFour.innerHTML = `<strong>${weatherData.list[
-    index_four
-  ].main.humidity.toFixed(0)}</strong>`;
-
-  const iconsrcFour = `https://openweathermap.org/img/w/${weatherData.list[index_four].weather[0].icon}.png`;
-  const descFour = weatherData.list[index_four].weather[0].description;
-
-  dayFourWeatherIcon.setAttribute("src", iconsrcFour);
-  dayFourWeatherIcon.setAttribute("alt", descFour);
-  captionDescFour.textContent = descFour.toUpperCase();
-
-  let dayOf = weatherData.list[index_three].dt_txt;
-  // console.log(typeof dayOf);
-
-  const displayDayThree = document.querySelector(".day-three");
-  const displayDayFour = document.querySelector(".day-four");
-
-  let dateThree = new Date(`${weatherData.list[index_three].dt_txt}`);
-  let dateFour = new Date(`${weatherData.list[index_four].dt_txt}`);
-  let dayFour = dateFour.getDay();
-  let dayThree = dateThree.getDay();
-  let weekday;
-
-  if (dayThree == 0) {
-    weekday = "Domingo";
-  } else if (dayThree == 1) {
-    weekday = "Segunda-Feira";
-  } else if (dayThree == 2) {
-    weekday = "Terca-Feira";
-  } else if (dayThree == 3) {
-    weekday = "Quarta-Feira";
-  } else if (dayThree == 4) {
-    weekday = "Quinta-Feira";
-  } else if (dayThree == 5) {
-    weekday = "Sexta-Feira";
-  } else if (dayThree === 6) {
-    weekday = "Sabado";
-  } else {
-    weekday = "Day 3";
-  }
-  displayDayThree.innerHTML = weekday;
-
-  // console.log(`First display: ${weekday}`);
-
-  if (dayFour == 0) {
-    weekday = "Domingo";
-  } else if (dayFour == 1) {
-    weekday = "Segunda-Feira";
-  } else if (dayFour == 2) {
-    weekday = "Terca-Feira";
-  } else if (dayFour == 3) {
-    weekday = "Quarta-Feira";
-  } else if (dayFour == 4) {
-    weekday = "Quinta-Feira";
-  } else if (dayFour == 5) {
-    weekday = "Sexta-Feira";
-  } else if (dayFour === 6) {
-    weekday = "Sabado";
-  } else {
-    weekday = "Day 4";
-  }
-  displayDayFour.innerHTML = weekday;
-  // console.log(`Second display: ${weekday}`);
 }
