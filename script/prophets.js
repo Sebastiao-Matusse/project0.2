@@ -74,7 +74,7 @@ const displayData = (cases) => {
     // cardhead.appendChild(ageAtDeath);
     card.appendChild(cardhead);
     card.appendChild(portrait);
-    console.log(cards);
+    // console.log(cards);
     cards.appendChild(card);
     // console.log(cards);
   });
