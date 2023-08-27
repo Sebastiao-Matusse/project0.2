@@ -1,19 +1,19 @@
 const url =
   "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
 
-async function getProphetData(url) {
+async function getTrashData(url) {
   const response = await fetch(url);
 
   if (response.ok) {
     const data = await response.json();
-    displayProphets(data.prophets);
+    displayData(data.cases);
   }
 }
 
-const displayProphets = (prophets) => {
+const displayData = (cases) => {
   const cards = document.querySelector("div.cards");
 
-  prophets.forEach((prophet) => {
+  cases.forEach((trashcase) => {
     // Create elements to add to the div.cards element
     let card = document.createElement("section");
     let cardhead = document.createElement("div");
@@ -26,32 +26,32 @@ const displayProphets = (prophets) => {
     let portrait = document.createElement("img");
 
     // Build the h2 content out to show the prophet's full name - finish the template string
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    birthdate.textContent = `${prophet.birthdate}`;
+    h2.textContent = `${trashcase.name} ${trashcase.lastname}`;
+    birthdate.textContent = `${trashcase.birthdate}`;
     // death.textContent = `${prophet.death}`;
-    birthplace.textContent = `${prophet.birthplace}`;
+    birthplace.textContent = `${trashcase.birthplace}`;
 
     // Build the image portrait by setting all the relevant attribute
-    portrait.setAttribute("src", prophet.imageurl);
-    if (prophet.order === 1) {
+    portrait.setAttribute("src", trashcase.imageurl);
+    if (trashcase.order === 1) {
       portrait.setAttribute(
         "alt",
-        `portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}st Latter-day President`
+        `portrait of ${trashcase.name} ${trashcase.lastname} - ${trashcase.order}st Latter-day President`
       );
-    } else if (prophet.order === 2) {
+    } else if (trashcase.order === 2) {
       portrait.setAttribute(
         "alt",
-        `portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}nd Latter-day President`
+        `portrait of ${trashcase.name} ${trashcase.lastname} - ${trashcase.order}nd Latter-day President`
       );
-    } else if (prophet.order === 3) {
+    } else if (trashcase.order === 3) {
       portrait.setAttribute(
         "alt",
-        `portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}rd Latter-day President`
+        `portrait of ${trashcase.name} ${trashcase.lastname} - ${trashcase.order}rd Latter-day President`
       );
     } else {
       portrait.setAttribute(
         "alt",
-        `portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}th Latter-day President`
+        `portrait of ${trashcase.name} ${trashcase.lastname} - ${trashcase.order}th Latter-day President`
       );
     }
 
@@ -80,4 +80,4 @@ const displayProphets = (prophets) => {
   });
 };
 
-getProphetData(url);
+getTrashData(url);
