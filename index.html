@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YD9G5L5CGK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YD9G5L5CGK");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home-Page</title>
@@ -89,9 +104,11 @@
         <h2>Denuncias Anteriores</h2>
         <div class="cards grid"></div>
         <div class="reportar-btn">
-          <button class="r-btn">
-            <b>REPORTE LIXO NAO RECOLHIDO</b>
-          </button>
+          <a href="reportar.html"
+            ><button class="r-btn">
+              <b>REPORTE LIXO NAO RECOLHIDO</b>
+            </button></a
+          >
         </div>
         <div class="weather">
           <h2>O Tempo em Beira</h2>

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9G5L5CGK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YD9G5L5CGK');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reportar-Lixo</title>
@@ -88,9 +97,10 @@
     <main>
       <div class="content">
         <h1>O lixo deve ser recolhido</h1>
+        <h3>Selecione no mapa o local que pretende denunciar</h3>
         <div id="map"></div>
 
-        <form action="">
+        <form action="" id="form">
           <fieldset>
             <legend>Dados do local com o lixo</legend>
             <label for="geolocation">
@@ -114,13 +124,13 @@
               </select>
             </label>
             <label for="Localproximo">
-              Local mais proximo* <input type="text" name="localproximo" />
+              Local mais proximo* <input type="text" name="localproximo" required/>
             </label>
             <label for="image">
               Fotografia do local<input type="file" name="image" />
             </label>
             <label for="comment">
-              Seu comentario: comment: <textarea cols="50" rows="5"></textarea>
+              Seu comentario: comment: <textarea cols="50" rows="5" required></textarea>
             </label>
           </fieldset>
 
@@ -132,7 +142,6 @@
                 type="tel"
                 name="celular"
                 required
-                pattern="\+258\s?\d{2}\s?\d{6}"
               />
             </label>
             <label for="email">
@@ -174,12 +183,40 @@
             </label>
           </fieldset>
           <label for="submitBtn">
-            <input type="submit" value="Submit" style="background-color: green; color: white; font-size:x-large;">
+            <input type="submit" value="Submeter" style="background-color: green; color: white; font-size:x-large;">
           </label>
         </form>
       </div>
     </main>
     <script src="script/script.js"></script>
     <script src="script/maps.js"></script>
-    <!-- <script ></script> -->
+    <script>
+      const url =
+        "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
+
+      const formEl = document.querySelector("#form");
+      
+      formEl.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(formEl);
+        const data = Object.fromEntries(formData)
+        console.log(data)
+
+        fetch(url, {
+        method: "PUT",
+        headers: {
+        "Authorization": `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+        "Accept": "application/vnd.github.v3+json"
+        },
+        body: JSON.stringify(data)
+      }).then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error =>console.log(error));
+      
+      });
+
+
+    </script>
 </html>
