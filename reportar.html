@@ -100,7 +100,7 @@
         <h3>Selecione no mapa o local que pretende denunciar</h3>
         <div id="map"></div>
 
-        <form action="" id="form">
+        <form name="denuncia" method="POST" data-netlify="true">
           <fieldset>
             <legend>Dados do local com o lixo</legend>
             <label for="geolocation">
@@ -190,33 +190,44 @@
     </main>
     <script src="script/script.js"></script>
     <script src="script/maps.js"></script>
-    <script>
-      const url =
-        "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
+    <!-- <script>
+      // const url =
+        // "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
 
-      const formEl = document.querySelector("#form");
-      
+        const formEl = document.querySelector("#form");
+        
       formEl.addEventListener("submit", (e) => {
         e.preventDefault();
 
         const formData = new FormData(formEl);
         const data = Object.fromEntries(formData)
-        console.log(data)
+        let accessToken = "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"
+        // console.log(data)
 
-        fetch(url, {
-        method: "PUT",
+      //   fetch(url, {
+      //   method: "PUT",
+      //   headers: {
+      //   "Authorization": `Bearer ${accessToken}`,
+      //   "Content-Type": "application/json",
+      //   "Accept": "application/vnd.github.v3+json"
+      //   },
+      //   body: JSON.stringify(data)
+      // }).then(res => res.json())
+      //   .then(data => console.log(data))
+      //   .catch(error =>console.log(error));
+        
+        
+      const url = "https://reqres.in/api/users"
+
+      fetch(url, {
+        method: "POST",
         headers: {
-        "Authorization": `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
-        "Accept": "application/vnd.github.v3+json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-      }).then(res => res.json())
-        .then(data => console.log(data))
-        .catch(error =>console.log(error));
-      
+      });
       });
 
 
-    </script>
+    </script> -->
 </html>
