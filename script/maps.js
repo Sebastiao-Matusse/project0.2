@@ -22,7 +22,7 @@ function onMapClick(e) {
   popup
     .setLatLng(e.latlng)
     .setContent(
-      "Voce selecionou a posicao com a seguinte " + e.latlng.toString()
+      "Você selecionou a posição com a seguinte " + e.latlng.toString()
     )
     .openOn(map);
 
