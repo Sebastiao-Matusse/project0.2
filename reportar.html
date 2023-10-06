@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YD9G5L5CGK"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YD9G5L5CGK"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-YD9G5L5CGK');
+      gtag("config", "G-YD9G5L5CGK");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +29,7 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-        <script
+    <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
@@ -49,7 +54,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <style>
-      #map { height: 250px; }
+      #map {
+        height: 250px;
+      }
     </style>
   </head>
   <body>
@@ -72,24 +79,16 @@
       <div id="socials">
         <ul>
           <li class="push">
-            <a href="#"
-              ><img src="./images/fb.png" alt="facebook-icon"
-            /></a>
+            <a href="#"><img src="./images/fb.png" alt="facebook-icon" /></a>
           </li>
           <li class="push">
-            <a href="#"
-              ><img src="./images/twiter.png" alt="twiter-icon"
-            /></a>
+            <a href="#"><img src="./images/twiter.png" alt="twiter-icon" /></a>
           </li>
           <li class="push">
-            <a href="#"
-              ><img src="./images/in.png" alt="linkedin-icon"
-            /></a>
+            <a href="#"><img src="./images/in.png" alt="linkedin-icon" /></a>
           </li>
           <li class="push">
-            <a href="#" 
-              ><img src="./images/ing.png" alt="instagram-icon"
-            /></a>
+            <a href="#"><img src="./images/ing.png" alt="instagram-icon" /></a>
           </li>
         </ul>
       </div>
@@ -104,7 +103,8 @@
           <fieldset>
             <legend>Dados do local com o lixo</legend>
             <label for="geolocation">
-              localização geográfica: <input type="text" name="geolocation" id="geoloc">
+              localização geográfica:
+              <input type="text" name="geolocation" id="geoloc" />
             </label>
             <label for="bairro">
               Bairro*
@@ -124,26 +124,39 @@
               </select>
             </label>
             <label for="Localproximo">
-              Local mais próximo* <input type="text" name="localproximo" required/>
+              Local mais próximo*
+              <input type="text" name="localproximo" required />
             </label>
             <label for="image">
-              Fotografia do local<input type="file" name="image" />
+              Cpaturar Imagem do local:
+              <input
+                id="imgFile"
+                type="file"
+                name="image"
+                capture="user"
+                accept="image/*"
+              />
             </label>
+            <label for="image">
+              Selecionar Imagem do local:
+              <input id="imgFile" type="file" name="image" />
+            </label>
+
             <label for="comment">
-              Seu comentario: comment: <textarea cols="50" rows="5" required></textarea>
+              Seu comentario:
+              <textarea cols="50" rows="5" required></textarea>
             </label>
           </fieldset>
 
           <fieldset>
             <legend>Dados do informante</legend>
-            <label for="nome-do-informante">Nomde do informante: <input type="text" placeholder="digite o seu nome aqui"></label>
+            <label for="nome-do-informante"
+              >Nome do informante:
+              <input type="text" placeholder="digite o seu nome aqui"
+            /></label>
             <label for="celular">
               Celular:
-              <input
-                type="tel"
-                name="celular"
-                placeholder="+258 8x xxx xxxx"
-              />
+              <input type="tel" name="celular" placeholder="+258 8x xxx xxxx" />
             </label>
             <label for="email">
               Email: <input type="email" name="email" />
@@ -184,7 +197,11 @@
             </label>
           </fieldset>
           <label for="submitBtn">
-            <input type="submit" value="Submeter" style="background-color: green; color: white; font-size:x-large;">
+            <input
+              type="submit"
+              value="Submeter"
+              style="background-color: green; color: white; font-size: x-large"
+            />
           </label>
         </form>
       </div>
@@ -196,44 +213,10 @@
 
     <script src="script/script.js"></script>
     <script src="script/maps.js"></script>
-    <!-- <script>
-      // const url =
-        // "https://raw.githubusercontent.com/Sebastiao-Matusse/project0.2/main/data/lixo.json";
-
-        const formEl = document.querySelector("#form");
-        
-      formEl.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(formEl);
-        const data = Object.fromEntries(formData)
-        let accessToken = "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"
-        // console.log(data)
-
-      //   fetch(url, {
-      //   method: "PUT",
-      //   headers: {
-      //   "Authorization": `Bearer ${accessToken}`,
-      //   "Content-Type": "application/json",
-      //   "Accept": "application/vnd.github.v3+json"
-      //   },
-      //   body: JSON.stringify(data)
-      // }).then(res => res.json())
-      //   .then(data => console.log(data))
-      //   .catch(error =>console.log(error));
-        
-        
-      const url = "https://reqres.in/api/users"
-
-      fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
-      });
-
-
-    </script> -->
+    <script>
+      const imgEl = document.querySelector("#imgFile");
+      console.log(imgEl);
+      imgEl.textContent = "Selecionar Imagem";
+    </script>
+  </body>
 </html>
