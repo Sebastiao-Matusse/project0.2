@@ -3,7 +3,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Matacuane - Enfrente a metrofarma",
-      "birthdate": "29 de Junho de 2023",
+      "birthdate": "sem data",
       "length": 14,
       "order": 1,
       "imageurl": "data/images/matacuane-metrofarma.jpg"
@@ -11,7 +11,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Bairro-CFM - Atras da Igreja Videira",
-      "birthdate": "06 de Julho de 2023",
+      "birthdate": "sem data",
       "length": 30,
       "order": 2,
       "birthplace": "Beira",
@@ -20,7 +20,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Matacuane - macamelo: perto da oficina 'campainha'",
-      "birthdate": "16 de Julho de 2023",
+      "birthdate": "sem data",
       "length": 6,
       "order": 3,
       "birthplace": "Beira",
@@ -29,7 +29,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Mananga - antes da ponte deviz simango - matacuane ",
-      "birthdate": "29 de Junho 2023",
+      "birthdate": "sem data",
       "death": "02 September 1898",
       "length": 9,
       "order": 4,
@@ -40,7 +40,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Enfrente-da-Escola-da-Muchatazina",
-      "birthdate": "06 de Julho de 2023",
+      "birthdate": "sem data",
       "death": "19 October 1901",
       "length": 3,
       "order": 5,
@@ -51,7 +51,7 @@
     {
       "name": "Munhava, Beira",
       "lastname": "Enfrente da Escola da Muchatazina - a 50m da 24 de Julho",
-      "birthdate": "06 de Julho de 2023",
+      "birthdate": "sem data",
       "death": "19 November 1918",
       "length": 17,
       "order": 6,
@@ -61,8 +61,8 @@
     },
     {
       "name": "Munhava, Beira",
-      "lastname": "Grant",
-      "birthdate": "22 November 1856",
+      "lastname": "",
+      "birthdate": "sem data",
       "death": "14 May 1945",
       "length": 23,
       "order": 7,
